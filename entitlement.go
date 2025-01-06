@@ -8,6 +8,7 @@ type EntitlementCode string
 type Entitlement struct {
 	ID       string                 `json:"-"`
 	Type     string                 `json:"-"`
+	Name     string                 `json:"name"`
 	Code     EntitlementCode        `json:"code"`
 	Created  time.Time              `json:"created"`
 	Updated  time.Time              `json:"updated"`
